@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;700&family=Mukta:wght@300&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+s
+
+<body>
+    <div class="video-mario">
+        <video src="/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    </div>
+    <div class="caixa-principal">
+        <img src="Cópia de logo.png" class="logo-mario">
+        <p>Encadores Mario & Luigi-Resolvendo Seus Problemas Com Estilo</p>
+        <p>Vocẽ já se encontrou em uma situação de emergência com encanamento? Vazamentos,inesperado canos
+            entupidos,ou
+            torneiras que não param de pingar?Não se preucupe,porque estamos aqui para salvar o seu dia!Aprensento a
+            voçês
+            os encanadores mais famosos,do.Reino do cogomelos-Mario & Luigi!!</p>
+        <button onclick="cliqueiNoBotão()">Fale conosco</button>
+    </div>
+    <img src="mario.png" alt="Mario&Luigi" class="logo-2">
+    <form class="fale-conosco">
+        <h1>Fale-conosco</h1>
+        <input placeholder="Seu Nome" type="text">
+        <input placeholder="Seu Telefone" type="Tel">
+        <textarea placeholder="Digite seu Problema"></textarea>
+        <button onclick="sumirFormulario">Enviar formulário</button>
+    </form>
+      <div class="mascara-form"></div>
+</body>
+<script>
+    let formulário = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+    function cliqueiNoBotão() {
+        formulário.style.left = "750px"
+        mascara.style.visibility ="visible"
+    }
+    
+    function sumirFormulario (){
+        formulário.style.left ="-325px"
+    }
+</script>
+
+</html>
